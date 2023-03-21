@@ -5,10 +5,6 @@ import { useLastFM } from "use-last-fm";
 export default function Home() {
 	const lastFM = useLastFM("mattia_999", "ddd142322b7ef8898f1fc27ad07a1760");
 
-	useEffect(() => {
-		console.log(lastFM.status);
-	}, [lastFM.status]);
-
 	return (
 		<>
 			<Head>
