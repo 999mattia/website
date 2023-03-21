@@ -3,6 +3,16 @@
 	src: url("/fonts/SFPRODISPLAYREGULAR.OTF");
 }
 
+@font-face {
+	font-family: "bold";
+	src: url("/fonts/SFPRODISPLAYBOLD.OTF");
+}
+
+@font-face {
+	font-family: "light";
+	src: url("/fonts/SFPRODISPLAYLIGHTITALIC.OTF");
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
