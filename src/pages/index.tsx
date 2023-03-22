@@ -1,9 +1,11 @@
 import Head from "next/head";
 import { useLastFM } from "use-last-fm";
 import styles from "@/styles/Home.module.css";
+import { useTheme } from "next-themes";
 
 export default function Home() {
 	const lastFM = useLastFM("mattia_999", "ddd142322b7ef8898f1fc27ad07a1760");
+	const { theme, setTheme } = useTheme();
 
 	return (
 		<center>

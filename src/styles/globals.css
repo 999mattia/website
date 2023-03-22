@@ -1,3 +1,13 @@
+:root {
+	--background: white;
+	--foreground: black;
+}
+
+[data-theme="dark"] {
+	--background: black;
+	--foreground: white;
+}
+
 @font-face {
 	font-family: "regular";
 	src: url("/fonts/SFPRODISPLAYREGULAR.OTF");
@@ -24,7 +34,6 @@ html,
 body {
 	max-width: 100vw;
 	overflow-x: hidden;
-	background-color: #faf6f1;
 }
 
 a {
