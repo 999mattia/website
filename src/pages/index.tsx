@@ -5,10 +5,9 @@ import { useTheme } from "next-themes";
 
 export default function Home() {
 	const lastFM = useLastFM("mattia_999", "ddd142322b7ef8898f1fc27ad07a1760");
-	const { theme, setTheme } = useTheme();
 
 	return (
-		<center>
+		<div className={styles.center}>
 			<main className={styles.container}>
 				<Head>
 					<title>Mattia</title>
@@ -21,7 +20,8 @@ export default function Home() {
 						href="/favicon.ico"
 					/>
 				</Head>
-				<h1>Hello World!</h1>
+				<h1>hi, i'm mattia</h1>i like sports, coding and meeting up with
+				friends
 				<div>
 					{lastFM.status === "playing" ? (
 						<>
@@ -33,12 +33,10 @@ export default function Home() {
 							</p>
 						</>
 					) : (
-						<>
-							<p>i'm currently not listening to music</p>
-						</>
+						<></>
 					)}
 				</div>
 			</main>
-		</center>
+		</div>
 	);
 }
