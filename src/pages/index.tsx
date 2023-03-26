@@ -35,26 +35,28 @@ export default function Home() {
 						<h1>hi i'm mattia</h1>i like sports and coding
 					</div>
 				</div>
-				<div className={styles.music}>
+				<>
 					{lastFM.status === "playing" ? (
-						<>
-							<div>
-								{" "}
-								i'm listening to {lastFM.song.name} by{" "}
-								{lastFM.song.artist}
+						<div className={styles.music}>
+							<h2>currently listening to:</h2>
+							<div className={styles.musicContent}>
+								<div className={styles.musicText}>
+									<h2>{lastFM.song.name}</h2> by
+									<h2>{lastFM.song.artist}</h2>
+								</div>
+								<img
+									className={styles.musicImg}
+									height={150}
+									width={150}
+									alt="album art"
+									src={lastFM.song.art}
+								/>
 							</div>
-							<img
-								className={styles.songImg}
-								height={150}
-								width={150}
-								alt="album art"
-								src={lastFM.song.art}
-							/>
-						</>
+						</div>
 					) : (
 						<></>
 					)}
-				</div>
+				</>
 			</div>
 		</div>
 	);

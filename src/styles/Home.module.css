@@ -16,13 +16,22 @@
 }
 
 .music {
+	margin-top: 3rem;
+}
+
+.musicContent {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin-top: 1rem;
 }
 
-.songImg {
+.musicImg {
 	border-radius: 25px;
 	box-shadow: 0 10px 20px -5px rgba(115, 115, 115, 0.75),
 		-10px 0 20px -5px rgba(115, 115, 115, 0.75);
+}
+
+.musicText {
+	margin-right: 1.5rem;
 }
