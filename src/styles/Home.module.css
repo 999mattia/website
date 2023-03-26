@@ -1,3 +1,33 @@
 .container {
 	max-width: 750px;
+	width: 100%;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.about {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.aboutIcon {
+	margin-left: -0.375rem;
+	margin-right: 1rem;
+}
+
+.music {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.songImg {
+	border-radius: 25px;
+	box-shadow: 0 10px 20px -5px rgba(115, 115, 115, 0.75),
+		-10px 0 20px -5px rgba(115, 115, 115, 0.75);
 }
