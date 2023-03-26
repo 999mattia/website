@@ -9,11 +9,7 @@ export default function Home() {
 
 	return (
 		<div className={styles.center}>
-<<<<<<< HEAD
-			<main className={styles.container}>
-=======
 			<div className={styles.container}>
->>>>>>> main
 				<Head>
 					<title>Mattia</title>
 					<meta
@@ -25,11 +21,6 @@ export default function Home() {
 						href="/favicon.ico"
 					/>
 				</Head>
-<<<<<<< HEAD
-				<h1>hi, i'm mattia</h1>i like sports, coding and meeting up with
-				friends
-				<div>
-=======
 				<div className={styles.about}>
 					<div>
 						{/* <Image
@@ -45,7 +36,6 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={styles.music}>
->>>>>>> main
 					{lastFM.status === "playing" ? (
 						<>
 							<div>
@@ -65,11 +55,7 @@ export default function Home() {
 						<></>
 					)}
 				</div>
-<<<<<<< HEAD
-			</main>
-=======
 			</div>
->>>>>>> main
 		</div>
 	);
 }
