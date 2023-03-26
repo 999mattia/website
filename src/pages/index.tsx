@@ -43,10 +43,10 @@ export default function Home() {
 								i'm listening to {lastFM.song.name} by{" "}
 								{lastFM.song.artist}
 							</div>
-							<Image
+							<img
 								className={styles.songImg}
-								height={100}
-								width={100}
+								height={150}
+								width={150}
 								alt="album art"
 								src={lastFM.song.art}
 							/>
