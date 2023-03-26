@@ -2,13 +2,18 @@ import Head from "next/head";
 import { useLastFM } from "use-last-fm";
 import styles from "@/styles/Home.module.css";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 export default function Home() {
 	const lastFM = useLastFM("mattia_999", "ddd142322b7ef8898f1fc27ad07a1760");
 
 	return (
 		<div className={styles.center}>
+<<<<<<< HEAD
 			<main className={styles.container}>
+=======
+			<div className={styles.container}>
+>>>>>>> main
 				<Head>
 					<title>Mattia</title>
 					<meta
@@ -20,23 +25,51 @@ export default function Home() {
 						href="/favicon.ico"
 					/>
 				</Head>
+<<<<<<< HEAD
 				<h1>hi, i'm mattia</h1>i like sports, coding and meeting up with
 				friends
 				<div>
+=======
+				<div className={styles.about}>
+					<div>
+						{/* <Image
+							className={styles.aboutIcon}
+							src="/code.svg"
+							width={75}
+							height={75}
+							alt="code"
+						></Image> */}
+					</div>
+					<div>
+						<h1>hi i'm mattia</h1>i like sports and coding
+					</div>
+				</div>
+				<div className={styles.music}>
+>>>>>>> main
 					{lastFM.status === "playing" ? (
 						<>
-							<img src={lastFM.song.art} />
-							<p>
+							<div>
 								{" "}
 								i'm listening to {lastFM.song.name} by{" "}
 								{lastFM.song.artist}
-							</p>
+							</div>
+							<Image
+								className={styles.songImg}
+								height={100}
+								width={100}
+								alt="album art"
+								src={lastFM.song.art}
+							/>
 						</>
 					) : (
 						<></>
 					)}
 				</div>
+<<<<<<< HEAD
 			</main>
+=======
+			</div>
+>>>>>>> main
 		</div>
 	);
 }

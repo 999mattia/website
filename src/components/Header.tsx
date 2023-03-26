@@ -1,5 +1,6 @@
 import styles from "../styles/Header.module.css";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 export default function Header() {
 	const { theme, setTheme } = useTheme();
@@ -16,10 +17,12 @@ export default function Header() {
 								: setTheme("light")
 						}
 					>
-						<img
+						<Image
 							src="/mode.png"
-							height="40px"
-						></img>
+							height={40}
+							width={40}
+							alt="mode"
+						></Image>
 					</a>
 				</div>
 			</header>
