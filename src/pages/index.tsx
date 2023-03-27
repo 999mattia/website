@@ -31,14 +31,16 @@ export default function Home() {
 							alt="code"
 						></Image> */}
 					</div>
-					<div>
+					<center>
 						<h1>hi i'm mattia</h1>i like sports and coding
-					</div>
+					</center>
 				</div>
 				<>
 					{lastFM.status === "playing" ? (
 						<div className={styles.music}>
-							<h2>currently listening to:</h2>
+							<center>
+								<h4>currently listening to:</h4>
+							</center>
 							<div className={styles.musicContent}>
 								<div className={styles.musicText}>
 									<h2>{lastFM.song.name}</h2> by

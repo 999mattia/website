@@ -2,6 +2,10 @@
 	max-width: 750px;
 	width: 100%;
 	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .center {
@@ -13,10 +17,11 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin-top: 2.5rem;
 }
 
 .music {
-	margin-top: 3rem;
+	margin-top: 5rem;
 }
 
 .musicContent {
@@ -32,10 +37,11 @@
 	border-radius: 25px;
 	box-shadow: 0 10px 20px -5px rgba(115, 115, 115, 0.75),
 		-10px 0 20px -5px rgba(115, 115, 115, 0.75);
+	margin-left: 2.5rem;
 }
 
 .musicText {
-	margin-right: 1.5rem;
+	margin-right: 2.5rem;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
