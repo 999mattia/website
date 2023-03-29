@@ -15,7 +15,7 @@ by
 </div>
 
 <script>
-window.onload = fetchMusic;
+window.onload = fetchMusic();
 function fetchMusic() {
   fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=mattia_999&api_key=ddd142322b7ef8898f1fc27ad07a1760&format=json&limit=1')
     .then(response => response.json())
