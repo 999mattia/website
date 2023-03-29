@@ -3,12 +3,12 @@ author = "mattia.netlify.app"
 +++
 
 <div>
-<center style="font-weight: bold;">currently listening to:</center>
+<center style="">currently listening to:</center>
 <div id="musicContent" style="display: flex; flex-direction: row; align-items: center; justify-content: center; max-height: 200px; height: 200px;">
 <div id="musicText" style="display: flex; flex-direction: column; justify-content: space-between; margin-right: 2.5rem; height: 100%; padding-top: 1rem; padding-bottom: 1rem;">
-<div id="song"></div>
+<div id="song" style="font-weight: 625"></div>
 by
-<div id="artist"></div>
+<div id="artist" style="font-weight: 625"></div>
 </div>
 <img id="img" style="border-radius: 20px; margin-left: 2.5rem; 	box-shadow: 0 10px 20px -5px rgba(115, 115, 115, 0.75),
 		-10px 0 20px -5px rgba(115, 115, 115, 0.75); height: 175px;" src=""><img>
