@@ -1,8 +1,8 @@
-baseURL = "http://mattia.netlify.app/"
+baseURL = "https://mattia-hugo.netlify.app/"
 languageCode = "en-us"
 title = "Mattia"
 
-theme="paper"
+theme="hugo-paper"
 
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
