@@ -3,10 +3,15 @@ author = "mattia.netlify.app"
 +++
 
 <div>
+<div id="musicContent" style="display: flex; flex-direction: row; align-items: center; justify-content: center; max-height: 200px; height: 200px;">
+<div id="musicText" style="display: flex; flex-direction: column; justify-content: space-between; margin-right: 2.5rem; height: 100%; padding-top: 1rem; padding-bottom: 1rem;">
 <div id="song"></div>
 by
 <div id="artist"></div>
-<img id="img" src=""><img>
+</div>
+<img id="img" style="border-radius: 20px; margin-left: 2.5rem; 	box-shadow: 0 10px 20px -5px rgba(115, 115, 115, 0.75),
+		-10px 0 20px -5px rgba(115, 115, 115, 0.75); height: 200px;" src=""><img>
+</div>
 
 <script>
 window.onload = fetchMusic;
@@ -29,4 +34,5 @@ function fetchMusic() {
 
 setInterval(fetchMusic, 1000);
 </script>
-</img>
+
+</div>
