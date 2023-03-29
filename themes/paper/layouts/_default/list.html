@@ -12,7 +12,8 @@
 {{ end }}
 
 <!-- Articles -->
-{{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages }}<!---->
+{{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages
+}}<!---->
 
 <!-- avatar -->
 {{ if and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) }}<!---->
@@ -35,7 +36,8 @@
   <div>
     <h1 class="my-2.5 text-3xl font-bold">{{ site.Params.name }}</h1>
     <div class="break-words">
-      {{ site.Params.bio | default (print `A personal blog by ` site.Params.name) }}
+      {{ site.Params.bio | default (print `A personal blog by `
+      site.Params.name) }}
     </div>
   </div>
   {{ end }}
