@@ -3,7 +3,7 @@ author = "mattia.netlify.app"
 +++
 
 <div>
-  <div style="display: flex; flex-direction: row; align-items: center; justify-content: left; max-height: 200px; height: 200px; margin-left: -3rem;">
+  <div style="display: flex; flex-direction: row; align-items: center; justify-content: left; max-height: 200px; height: 200px; margin-left: -3rem; margin-top: -5rem;">
     <img src="/icon.png" style="height: 175px; margin-right: 0rem;">
     <div>
       <div style="font-weight: 625;">hey, i'm mattia</div>
