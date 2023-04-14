@@ -1,4 +1,4 @@
-baseURL = "https://mattia.netlify.app"
+baseURL = "https://mattiag.ch"
 languageCode = "en-us"
 title = "Mattia"
 
@@ -10,7 +10,7 @@ ignoreErrors = ["error-remote-getjson"]
 [params]
   color = 'linen'                           # linen, wheat, gray, light
 
-  github = 'maettu999'                 # github.com/YOUR_GITHUB_ID
+  github = '999mattia'                 # github.com/YOUR_GITHUB_ID
   instagram = 'mattia.05x'           # instagram.com/YOUR_INSTAGRAM_ID
 
   avatar = 'mattia.gisiger@gmail.com'                 # gravatar email or image url
