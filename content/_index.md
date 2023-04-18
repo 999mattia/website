@@ -1,5 +1,5 @@
 +++
-author = "mattia.netlify.app"
+author = "mattiag.ch"
 +++
 
 <div>
