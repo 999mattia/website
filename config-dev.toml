@@ -29,6 +29,12 @@ ignoreErrors = ["error-remote-getjson"]
     name = "Projects"
     url = "/projects/"
     weight = 10
+    
+  [[menu.main]]
+    identifier = "music"
+    name = "Music"
+    url = "/music/"
+    weight = 10
 
 [taxonomies]
 category = "categories"
