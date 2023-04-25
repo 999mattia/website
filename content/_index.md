@@ -39,7 +39,7 @@ function fetchMusic() {
     })
     .catch(error => {
       console.error('Error fetching data:', error);
-    });
+    })
 }
 
 setInterval(fetchMusic, 1000);
