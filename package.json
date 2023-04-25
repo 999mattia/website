@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "A simple personal website built with Hugo using the \"paper\" theme",
+  "dependencies": {
+    "@netlify/functions": "^1.4.0",
+    "spotify-web-api-node": "^5.0.2",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maettu999/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maettu999/website/issues"
+  }
+}
