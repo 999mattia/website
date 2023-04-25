@@ -26,16 +26,16 @@ author = "mattiag.ch"
 <script>
 window.onload = fetchMusic();
 function fetchMusic() {
-  fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=mattia_999&api_key=ddd142322b7ef8898f1fc27ad07a1760&format=json&limit=1')
+  fetch('https://spotifyapi-7a5y.onrender.com/current')
     .then(response => response.json())
     .then(data => {
       console.log(data);
       const song = document.getElementById('song');
       const artist = document.getElementById('artist');
       const img = document.getElementById('img');
-      song.innerHTML = data.recenttracks.track[0].name;
-      artist.innerHTML = data.recenttracks.track[0].artist['#text'];
-      img.src = data.recenttracks.track[0].image[3]['#text'];
+      song.innerHTML = data.name;
+      artist.innerHTML = data.artists;
+      img.src = data.imageUrl;
     })
     .catch(error => {
       console.error('Error fetching data:', error);
