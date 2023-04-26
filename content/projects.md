@@ -7,3 +7,10 @@ author = "mattiag.ch"
 +++
 
 Most of my projects can be found on GitHub. Some projects i made sadly can't be uploaded to Github, due to restrictions from the company i work for.
+
+Here are some of the projects I enjoyed the most while working on them:
+
+<div>
+    <style></style>
+    
+</div>

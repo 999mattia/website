@@ -7,7 +7,7 @@ author = "mattiag.ch"
     <img src="/icon.png" style="height: 175px; margin-right: 0rem;">
     <div>
       <div style="font-weight: 625;">hey, i'm mattia</div>
-      <div>i like sports</div>
+      <div>i like sports and coding</div>
     </div>
   </div>
   <center style="margin-top: 4rem;">
