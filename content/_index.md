@@ -35,7 +35,7 @@ function fetchMusic() {
       const img = document.getElementById('img');
       song.innerHTML = data.name;
       artist.innerHTML = data.artist;
-      img.src = data.imagUrl;
+      img.src = data.imgUrl;
     })
     .catch(error => {
       console.error('Error fetching data:', error);
