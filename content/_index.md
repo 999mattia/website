@@ -40,12 +40,13 @@ function fetchMusic() {
   //   .catch(error => {
   //     console.error('Error fetching data:', error);
   //   })
-const clientId = 'your_client_id';
-const clientSecret = 'your_client_secret';
-const refreshToken = 'your_refresh_token';
-let accessToken = 'your_access_token';
+const clientId = 'c4a1d44eea4b4b00a45dabe89d3d7238';
+const clientSecret = '58fc5b44408140cda5f0145ff01ea62f';
+const refreshToken = 'AQDXM8i5ctzhTu3y7TvfMmbNTYLUS4Qf3nGvKDmukvTI-eGXM26_5EJ_r9Oww-gIh29WN_DspgVuktTt5XVU9Rks9ftCcF8R0GO57EqJ0S2VneoTLMVULIB-BAcn4dPbmF4';
+let accessToken = 'BQCc8l4s1Od0KqjpWGp-e8vpeMgWm2t2MEyRH7B584Cq_yOeccY_Yv3w5edRfgoaXuvPabpYxpXL6O5vPtZJ96aKgKVnO37J1d4K4YpKIwUaeinCeCmK9Qm5qqt-bCo7EQ001rQ4GQk3DvZw5UXQ829R8xI4SToWpQp1KfrDkt7cezjSTIoz05T50125B5jEO2iKnq92QWw8OO7Q2vbn0Ldz2c-OmKnKY29nzegefcYuxatcQ4ES8wmuBtvo4pHDdJMkxb9IxCdX3fcJZmFHFXOSMytYbqQ6M5fyM32sQ_9ZNJ5XPcPlHwI_PBVJpcbhrw';
 
 function getCurrentPlayingTrack() {
+  refreshAccesToken()
   fetch('https://api.spotify.com/v1/me/player/currently-playing', {
     method: 'GET',
     headers: {
