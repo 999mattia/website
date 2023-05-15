@@ -26,7 +26,7 @@ author = "mattiag.ch"
 <script>
 window.onload = fetchMusic();
 function fetchMusic() {
-  fetch('https://spotify.mattiag.ch/current')
+  fetch('https://grades.mattiag.ch/api/spotify/current')
     .then(response => response.json())
     .then(data => {
       console.log(data);
@@ -34,8 +34,8 @@ function fetchMusic() {
       const artist = document.getElementById('artist');
       const img = document.getElementById('img');
       song.innerHTML = data.name;
-      artist.innerHTML = data.artists;
-      img.src = data.imageUrl;
+      artist.innerHTML = data.artist;
+      img.src = data.imagUrl;
     })
     .catch(error => {
       console.error('Error fetching data:', error);
