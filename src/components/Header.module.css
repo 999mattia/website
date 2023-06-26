@@ -1,0 +1,28 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.content {
+	max-width: 675px;
+	max-height: 100px;
+	width: 100%;
+	height: 100%;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+}
+
+.logo {
+	font-size: 1.875rem;
+	font-weight: bold;
+}
+
+.icon {
+	height: 1.75rem;
+	margin-left: 1.5rem;
+}
