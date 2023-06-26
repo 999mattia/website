@@ -26,7 +26,7 @@ author = "mattiag.ch"
 <script>
 window.onload = fetchMusic();
 function fetchMusic() {
-  fetch('https://api.grades.mattiag.ch/api/spotify/current')
+  fetch('https://spotify.mattiag.ch/current')
     .then(response => response.json())
     .then(data => {
       console.log(data);
