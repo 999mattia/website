@@ -1,27 +1,62 @@
-import type { Component } from 'solid-js';
-
-import logo from './logo.svg';
-import styles from './App.module.css';
+import type { Component } from "solid-js";
+import { createSignal, createEffect } from "solid-js";
+import styles from "./App.module.css";
+import { Song } from "./lib/types";
+import icon from "./assets/icon.png";
 
 const App: Component = () => {
-  return (
-    <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
-      </header>
-    </div>
-  );
+	const [song, setSong] = createSignal<Song>();
+
+	createEffect(() => {
+		const fetchSong = async () => {
+			try {
+				const res = await fetch("https://spotify.mattiag.ch/current");
+				const song: Song = await res.json();
+				setSong(song);
+			} catch (error) {
+				console.error("Error fetching data:", error);
+			}
+		};
+
+		fetchSong();
+
+		const intervall = setInterval(fetchSong, 1000);
+
+		return () => clearInterval(intervall);
+	});
+
+	return (
+		<div class={styles.container}>
+			<div class={styles.content}>
+				<div class={styles.aboutContainer}>
+					<img
+						class={styles.aboutImg}
+						src={icon}
+					/>
+					<div>
+						<div class={styles.aboutText1}>hey, i'm mattia</div>
+						<div>i like sports</div>
+					</div>
+				</div>
+
+				<div class={styles.center}>currently listening to:</div>
+
+				<div class={styles.musicContainer}>
+					<div class={styles.musicText}>
+						<div class={styles.musicTextName}>{song()?.name}</div>
+						<div>by</div>
+						<div class={styles.musicTextArtist}>
+							{song()?.artist}
+						</div>
+					</div>
+					<img
+						class={styles.musicImage}
+						src={song()?.imgUrl}
+					/>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default App;
