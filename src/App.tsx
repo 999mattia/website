@@ -5,7 +5,11 @@ import { Song } from "./lib/types";
 import icon from "./assets/icon.png";
 
 const App: Component = () => {
-	const [song, setSong] = createSignal<Song>();
+	const [song, setSong] = createSignal<Song>({
+		name: "Loading...",
+		artist: "Loading...",
+		imgUrl: "",
+	});
 
 	createEffect(() => {
 		const fetchSong = async () => {
