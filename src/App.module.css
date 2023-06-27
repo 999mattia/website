@@ -43,13 +43,15 @@
 	justify-content: center;
 	max-height: 200px;
 	height: 200px;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 
 .musicText {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-right: 3rem;
+	margin-right: 1rem;
 	height: 100%;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -57,17 +59,17 @@
 
 .musicTextName {
 	font-weight: 625;
-	margin-top: 1rem;
+	margin-top: 1.5rem;
 }
 
 .musicTextArtist {
 	font-weight: 625;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .musicImage {
 	border-radius: 20px;
-	margin-left: 3rem;
+	margin-left: 1rem;
 	box-shadow: 0 10px 20px -5px rgba(115, 115, 115, 0.75),
 		-10px 0 20px -5px rgba(115, 115, 115, 0.75);
 	height: 175px;
