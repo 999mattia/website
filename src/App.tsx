@@ -39,7 +39,7 @@ const App: Component = () => {
 					/>
 					<div>
 						<div class={styles.aboutText1}>hey, i'm mattia</div>
-						<div>i like sports</div>
+						<div>i like sports and coding</div>
 					</div>
 				</div>
 
